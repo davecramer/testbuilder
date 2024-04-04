@@ -16,7 +16,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: codebuild-test2-${{ github.run_id }}-${{ github.run_attempt }}
     permissions:
       contents: read
 
